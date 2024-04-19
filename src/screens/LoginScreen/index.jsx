@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 import ButtonComponent from "../../components/ButtonComponent";
 import InputComponent from "../../components/InputComponent";
+import { styles } from "./styles";
 
 const LoginScreen = () => {
   return (
@@ -10,7 +11,7 @@ const LoginScreen = () => {
       <InputComponent placeholder="E-mail" />
       <InputComponent placeholder="Senha" />
 
-      <ButtonComponent title="Login" screen="Login" />
+      <ButtonComponent title="Login" screen="Home" />
 
       <View>
         <ButtonComponent title="Quero me cadastrar" screen="Register" />
@@ -18,19 +19,5 @@ const LoginScreen = () => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  title: {
-    fontSize: 35,
-    marginBottom: 60,
-  },
-  container: {
-    flex: 1,
-    gap: 40,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
 
 export default LoginScreen;
