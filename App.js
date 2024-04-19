@@ -1,7 +1,10 @@
-import RegisterScreen from "./src/screens/RegisterScreen";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import Navigation from "./src/navigation";
 
 export default function App() {
   return (
-    <RegisterScreen />
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <Navigation />
+    </GestureHandlerRootView>
   );
 }

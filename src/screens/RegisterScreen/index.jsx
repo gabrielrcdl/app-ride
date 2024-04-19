@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import ButtonComponent from "../../components/ButtonComponent";
-import InputComponent from '../../components/InputComponent';
+import InputComponent from "../../components/InputComponent";
 
 const RegisterScreen = () => {
   return (
@@ -12,10 +12,10 @@ const RegisterScreen = () => {
       <InputComponent placeholder="Telefone" />
       <InputComponent placeholder="Senha" />
 
-      <ButtonComponent title="Cadastrar" />
+      <ButtonComponent title="Cadastrar" screen="Login" />
 
       <View>
-        <ButtonComponent title="Já tenho uma conta" /> 
+        <ButtonComponent title="Já tenho uma conta" screen="Login" />
       </View>
     </View>
   );
