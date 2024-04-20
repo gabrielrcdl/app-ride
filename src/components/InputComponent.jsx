@@ -9,10 +9,12 @@ const styles = StyleSheet.create({
     width: 380,
     height: 60,
     padding: 10,
-    borderRadius: 7,
-    borderColor: "gray",
+    borderRadius: 20,
+    borderColor: "black",
     borderWidth: 1,
   },
+
+  
 });
 
 export default InputComponent;

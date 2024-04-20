@@ -5,13 +5,13 @@ export const styles = StyleSheet.create({
     fontSize: 35,
     color: "#fff",
     fontWeight: "bold",
-    marginTop: 300,
+    marginTop: -90,
     fontSize: 30,
     textTransform: "uppercase",
   },
   container: {
-    flex: 2,
-    gap: 200,
+    flex: 3,
+    gap: 80,
     backgroundColor: "black",
     alignItems: "center",
     justifyContent: "center",
@@ -26,4 +26,13 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 50,
     width: "100%",
   },
+
+  logo: {
+    marginTop: 200,
+  },
+  registerContainer:{
+    display: "flex",
+    flexDirection: "row",
+    gap: 5
+  }
 });
