@@ -22,7 +22,7 @@ const LoginScreen = () => {
         <InputComponent placeholder="Senha" icon="lock" secureTextEntry />
 
         <View style={styles.button}>
-          <ButtonComponent title="Entrar" screen="Home" />
+          <ButtonComponent title="Entrar" screen="Ride" />
         </View>
 
         <View style={styles.registerContainer}>

@@ -23,7 +23,7 @@ const RegisterScreen = () => {
       <CheckBox title="Sou um motorista" />
 
       <View style={styles.submit}>
-        <ButtonComponent title="Criar" screen="Home" />
+        <ButtonComponent title="Criar" screen="Ride" />
 
         <View style={styles.registerContainer}>
           <Text>Já tem um conta?</Text>
