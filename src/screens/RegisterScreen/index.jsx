@@ -1,7 +1,8 @@
-import { Text, View, TouchableOpacity } from "react-native";
-import ButtonComponent from "../../components/ButtonComponent";
 import { useNavigation } from "@react-navigation/native";
-
+import { CheckBox } from "@rneui/themed";
+import { Text, TouchableOpacity, View } from "react-native";
+import ButtonComponent from "../../components/ButtonComponent";
+import HeaderComponent from "../../components/HeaderComponent";
 import InputComponent from "../../components/InputComponent";
 import { styles } from "./styles";
 
@@ -10,26 +11,28 @@ const RegisterScreen = () => {
 
   return (
     <View style={styles.container}>
-      <View style={styles.titleContainer}>
-      <Text style={styles.title}>Cadastro</Text>
+      <HeaderComponent title="Cadastro"/>
+
+      <View style={styles.inputsContainer}>
+        <InputComponent placeholder="Nome" icon="person" />
+        <InputComponent placeholder="Celular" icon="phone" />
+        <InputComponent placeholder="E-mail" icon="alternate-email" />
+        <InputComponent placeholder="Senha" icon="lock" />
       </View>
+      
+      <CheckBox title="Sou um motorista" />
 
-      <InputComponent styles={styles.placeColor} placeholder="Nome" />
-      <InputComponent styles={styles.placeColor} placeholder="Celular" />
-      <InputComponent styles={styles.placeColor} placeholder="E-mail" />
-      <InputComponent styles={styles.placeColor} placeholder="Senha" />
+      <View style={styles.submit}>
+        <ButtonComponent title="Criar" screen="Home" />
 
-      <ButtonComponent title="Criar" screen="Home" />
-
-      <View style={styles.registerContainer}>
+        <View style={styles.registerContainer}>
           <Text>Já tem um conta?</Text>
 
-          <TouchableOpacity
-            onPress={() => nav.navigate('Login')}
-          >
-            <Text>Clique aqui!</Text>
+          <TouchableOpacity onPress={() => nav.navigate("Login")}>
+            <Text style={{ fontWeight: "bold" }}>Clique aqui!</Text>
           </TouchableOpacity>
         </View>
+      </View>
     </View>
   );
 };

@@ -1,20 +1,29 @@
-import { StyleSheet, TextInput } from "react-native";
+import { MaterialIcons } from "@expo/vector-icons";
+import { Input } from "@rneui/base";
+import { StyleSheet, View } from "react-native";
 
-const InputComponent = (props) => {
-  return <TextInput placeholder={props.placeholder} style={styles.inputs}/>;
+const InputComponent = ({ icon, type, ...rest }) => {
+  return (
+    <View style={styles.container}>
+      <Input
+        leftIcon={<MaterialIcons name={icon} size={24} color="black" />}
+        {...rest}
+        inputContainerStyle={{borderBottomWidth: 0}}
+        style={styles.inputs}
+      />
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
   inputs: {
-    width: 380,
-    height: 60,
-    padding: 10,
-    borderRadius: 20,
-    borderColor: "black",
-    borderWidth: 1,
+    padding: 10
   },
-
-  
+  container: {
+    height: 50,
+    borderWidth: 1,
+    borderRadius: 20
+  },
 });
 
 export default InputComponent;

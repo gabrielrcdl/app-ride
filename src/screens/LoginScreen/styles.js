@@ -5,8 +5,8 @@ export const styles = StyleSheet.create({
     fontSize: 35,
     color: "#fff",
     fontWeight: "bold",
-    marginTop: -90,
     fontSize: 30,
+    textAlign: 'center',
     textTransform: "uppercase",
   },
   container: {
@@ -19,18 +19,22 @@ export const styles = StyleSheet.create({
   inputsContainer: {
     backgroundColor: "#fff",
     gap: 20,
-    alignItems: "center",
     justifyContent: "center",
-    height: 600,
+    height: 500,
     borderTopRightRadius: 50,
     borderTopLeftRadius: 50,
     width: "100%",
+    padding: 20,
   },
-
+  button: {
+    justifyContent: "center",
+    alignItems: "center",
+  },
   logo: {
     marginTop: 200,
   },
   registerContainer:{
+    justifyContent: "center",
     display: "flex",
     flexDirection: "row",
     gap: 5
